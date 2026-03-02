@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Fanar Auto Spare Parts – Since 2002 | Sharjah, UAE</title>
+<meta name="description" content="Al Fanar Auto Spare Parts Trading – Quality diesel and commercial vehicle spare parts in UAE since 2002. Located in Industrial Area 2, Sharjah.">
+<meta property="og:title" content="Al Fanar Auto Spare Parts – Since 2002">
+<meta property="og:description" content="Trusted supplier of auto spare parts for Hino, Isuzu, Fuso, Nissan UD, Tata, Tadano, Kato & more. Sharjah, UAE.">
+<meta property="og:image" content="thumbnail.png">
+<meta property="og:url" content="https://www.alfanaruae.com">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black: #0d0d0d;
+  --gold: #c9a84c;
+  --gold-light: #e8c96a;
+  --white: #fafaf8;
+  --grey: #6b6b6b;
+  --grey-light: #f2f1ee;
+  --red: #b52a2a;
+  --border: #ddd8d0;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--white);
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+/* ─── TOPBAR ─── */
+.topbar {
+  background: var(--black);
+  color: #ccc;
+  font-size: 12.5px;
+  padding: 7px 0;
+  letter-spacing: 0.03em;
+}
+.topbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.topbar a { color: var(--gold); text-decoration: none; }
+.topbar a:hover { color: var(--gold-light); }
+.topbar-left, .topbar-right { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+.topbar-divider { color: #444; }
+
+/* ─── HEADER ─── */
+header {
+  background: var(--white);
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+}
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.logo img { height: 58px; width: auto; }
+
+nav { display: flex; align-items: center; gap: 4px; }
+nav a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 2px;
+  transition: color 0.2s, background 0.2s;
+  position: relative;
+}
+nav a:hover, nav a.active { color: var(--gold); }
+
+.nav-dropdown { position: relative; }
+.nav-dropdown > a::after { content: ' ▾'; font-size: 10px; }
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  min-width: 220px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  display: none;
+  z-index: 200;
+}
+.nav-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 13px;
+  border-bottom: 1px solid #f0ede8;
+  color: var(--black);
+  border-radius: 0;
+  letter-spacing: 0.04em;
+}
+.dropdown-menu a:hover { background: var(--grey-light); color: var(--gold); padding-left: 24px; }
+.dropdown-menu a:last-child { border-bottom: none; }
+
+.nav-cta {
+  background: var(--gold);
+  color: var(--black) !important;
+  padding: 9px 20px !important;
+  font-weight: 700 !important;
+  border-radius: 2px;
+  margin-left: 8px;
+}
+.nav-cta:hover { background: var(--gold-light) !important; color: var(--black) !important; }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+}
+.hamburger span { display: block; width: 26px; height: 2px; background: var(--black); transition: 0.3s; }
+
+/* ─── NAV BUTTON BAR ─── */
+.nav-bar {
+  background: var(--black);
+  border-bottom: 3px solid var(--gold);
+}
+.nav-bar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav-bar-inner::-webkit-scrollbar { display: none; }
+.nav-bar-inner a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ccc;
+  text-decoration: none;
+  padding: 13px 20px;
+  white-space: nowrap;
+  border-right: 1px solid #222;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-bar-inner a:hover { color: var(--gold); background: #111; }
+.nav-bar-inner a.nb-active { color: var(--gold); background: #111; }
+.nav-bar-inner .nb-dropdown { position: relative; }
+.nav-bar-inner .nb-dropdown > a::after { content: ' ▾'; font-size: 10px; }
+.nb-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-top: 3px solid var(--gold);
+  min-width: 210px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  display: none;
+  z-index: 300;
+}
+.nb-dropdown:hover .nb-dropdown-menu { display: block; }
+.nb-dropdown-menu a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 12.5px;
+  border-bottom: 1px solid #1e1e1e;
+  color: #aaa;
+  border-right: none;
+  letter-spacing: 0.05em;
+}
+.nb-dropdown-menu a:hover { color: var(--gold); background: #1a1a1a; padding-left: 24px; }
+.nb-dropdown-menu a:last-child { border-bottom: none; }
+
+/* ─── HERO SLIDER ─── */
+.hero {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  display: flex;
+  align-items: center;
+}
+.slide.active { opacity: 1; }
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10,10,10,0.78) 0%, rgba(10,10,10,0.35) 60%, transparent 100%);
+}
+.slide-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 60px;
+  color: var(--white);
+}
+.slide-eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+.slide-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(34px, 5vw, 58px);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 18px;
+  max-width: 560px;
+}
+.slide-sub {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ddd;
+  margin-bottom: 32px;
+  max-width: 440px;
+  line-height: 1.6;
+}
+.btn-primary {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--black);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 34px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+.btn-outline {
+  display: inline-block;
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 2px;
+  margin-left: 12px;
+  transition: background 0.2s;
+}
+.btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+.slide-dots {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.dot.active { background: var(--gold); transform: scale(1.4); }
+
+/* Slide backgrounds using CSS gradients + patterns */
+.slide-1 .slide-bg { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%); }
+.slide-2 .slide-bg { background: linear-gradient(135deg, #1a0a00 0%, #2d1500 40%, #4a2000 100%); }
+.slide-3 .slide-bg { background: linear-gradient(135deg, #001a0a 0%, #002d15 40%, #004a28 100%); }
+
+.hero-truck-icon {
+  position: absolute;
+  right: 8%;
+  bottom: 20%;
+  font-size: 180px;
+  opacity: 0.07;
+  z-index: 1;
+  line-height: 1;
+}
+
+/* ─── BRANDS STRIP ─── */
+.brands-strip {
+  background: var(--black);
+  padding: 22px 0;
+  overflow: hidden;
+}
+.brands-track {
+  display: flex;
+  gap: 0;
+  animation: scroll-brands 25s linear infinite;
+  width: max-content;
+}
+.brands-track:hover { animation-play-state: paused; }
+.brand-item {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+  padding: 0 36px;
+  white-space: nowrap;
+  transition: color 0.3s;
+  position: relative;
+}
+.brand-item::after {
+  content: '◆';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gold);
+  font-size: 8px;
+}
+.brand-item:hover { color: var(--gold); }
+@keyframes scroll-brands {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ─── SECTION HEADERS ─── */
+.section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.section-eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.15;
+}
+.section-title span { color: var(--gold); }
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  margin: 18px auto 0;
+}
+
+/* ─── SERVICES ─── */
+.services {
+  padding: 80px 0;
+  background: var(--grey-light);
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2px;
+}
+.service-card {
+  background: var(--white);
+  padding: 40px 28px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.service-card:hover::before { transform: scaleX(1); }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+.service-icon {
+  font-size: 44px;
+  margin-bottom: 18px;
+  display: block;
+}
+.service-card h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+.service-card p {
+  font-size: 14px;
+  color: var(--grey);
+  line-height: 1.65;
+}
+
+/* ─── PRODUCTS SECTION ─── */
+.products-section { padding: 80px 0; }
+.products-section.dark {
+  background: var(--black);
+}
+.products-section.dark .section-title { color: var(--white); }
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.category-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+  transition: all 0.25s;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.category-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.category-card:hover::after { transform: scaleX(1); }
+.category-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+  border-color: var(--gold);
+}
+.category-card:hover .cat-img { transform: scale(1.06); }
+.cat-img-wrap {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #f7f6f3;
+}
+.cat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+.category-card h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--black);
+  padding: 14px 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* ─── CATEGORY PAGE OVERLAY ─── */
+.cat-page {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--white);
+  z-index: 1000;
+  overflow-y: auto;
+}
+.cat-page.open { display: block; }
+.cat-page-header {
+  background: var(--black);
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 3px solid var(--gold);
+}
+.cat-back-btn {
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.cat-back-btn:hover { background: var(--gold-light); }
+.cat-page-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.cat-page-breadcrumb {
+  font-size: 12px;
+  color: #777;
+  margin-left: auto;
+}
+.cat-page-breadcrumb span { color: var(--gold); }
+.cat-page-body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+.product-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+  border-color: var(--gold);
+}
+.product-card img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+  background: #f7f6f3;
+}
+.product-card-body { padding: 14px 16px; }
+.product-card-body h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+.product-enquire-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+.product-enquire-btn:hover { background: var(--gold); color: var(--black); }
+.cat-enquire-banner {
+  background: var(--black);
+  border: 1px solid #222;
+  border-radius: 3px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.cat-enquire-banner p { color: #aaa; font-size: 15px; }
+.cat-enquire-banner p strong { color: var(--white); }
+
+/* ─── ABOUT STRIP ─── */
+.about-strip {
+  background: var(--black);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.about-strip::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.about-left .section-header { text-align: left; }
+.about-left .section-divider { margin: 18px 0 0; }
+.about-left .section-title { color: var(--white); }
+.about-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #aaa;
+  margin-top: 24px;
+}
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 36px;
+}
+.stat-box {
+  border-left: 3px solid var(--gold);
+  padding-left: 18px;
+}
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+.stat-label {
+  font-size: 13px;
+  color: #777;
+  margin-top: 4px;
+  letter-spacing: 0.05em;
+}
+.about-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.about-feature {
+  background: #111;
+  border: 1px solid #222;
+  padding: 28px 22px;
+  border-radius: 3px;
+  transition: border-color 0.3s;
+}
+.about-feature:hover { border-color: var(--gold); }
+.about-feature-icon { font-size: 32px; display: block; margin-bottom: 12px; }
+.about-feature h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.about-feature p { font-size: 13px; color: #666; line-height: 1.6; }
+
+/* ─── CONTACT ─── */
+.contact-section { padding: 80px 0; background: var(--grey-light); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.contact-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 28px;
+  color: var(--black);
+}
+.contact-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+.contact-item-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--gold);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.contact-item-text h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 4px;
+}
+.contact-item-text p, .contact-item-text a {
+  font-size: 15px;
+  color: var(--black);
+  text-decoration: none;
+  line-height: 1.5;
+}
+.contact-item-text a:hover { color: var(--gold); }
+
+.social-links { display: flex; gap: 14px; margin-top: 32px; }
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border: 2px solid var(--border);
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--black);
+  transition: all 0.2s;
+}
+.social-btn:hover { border-color: var(--gold); color: var(--gold); }
+.social-btn span { font-size: 20px; }
+
+.contact-form-box {
+  background: var(--white);
+  padding: 40px;
+  border: 1px solid var(--border);
+}
+.contact-form-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 28px;
+  color: var(--black);
+}
+.form-group { margin-bottom: 18px; }
+.form-group label {
+  display: block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 7px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  background: var(--grey-light);
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  color: var(--black);
+  border-radius: 2px;
+  transition: border-color 0.2s;
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--gold); }
+.form-group textarea { height: 120px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+.btn-submit:hover { background: var(--gold-light); }
+
+/* ─── MAP ─── */
+.map-section { height: 360px; position: relative; }
+.map-section iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* ─── FOOTER ─── */
+footer {
+  background: #080808;
+  color: #777;
+  padding: 60px 0 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+  border-bottom: 1px solid #1a1a1a;
+}
+.footer-brand img { height: 48px; filter: brightness(0) invert(0.7); margin-bottom: 18px; }
+.footer-brand p { font-size: 13.5px; line-height: 1.75; color: #666; max-width: 300px; }
+.footer-col h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+.footer-col a {
+  display: block;
+  color: #666;
+  text-decoration: none;
+  font-size: 13.5px;
+  margin-bottom: 10px;
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--white); }
+.footer-bottom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12.5px;
+  color: #444;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.footer-bottom a { color: #555; text-decoration: none; }
+.footer-bottom a:hover { color: var(--gold); }
+
+/* ─── WHATSAPP FLOAT ─── */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 58px;
+  height: 58px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  z-index: 999;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  text-decoration: none;
+  transition: transform 0.3s;
+  animation: pulse-wa 2.5s infinite;
+}
+.whatsapp-float:hover { transform: scale(1.1); }
+@keyframes pulse-wa {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+  50% { box-shadow: 0 4px 32px rgba(37,211,102,0.7); }
+}
+
+/* ─── MOBILE ─── */
+@media (max-width: 900px) {
+  nav { display: none; }
+  nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0; right: 0;
+    background: var(--white);
+    border-top: 2px solid var(--border);
+    padding: 16px 24px;
+    gap: 0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    z-index: 99;
+  }
+  nav.open a { padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .hamburger { display: flex; }
+  header { position: relative; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .hero { height: 420px; }
+  .slide-content { padding: 0 28px; }
+  .about-stats { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .topbar-left { display: none; }
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/971506840517" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">📱</a>
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span>📍 Industrial Area 2, Sharjah, UAE</span>
+      <span class="topbar-divider">|</span>
+      <span>Sat–Thu: 8:00 AM – 6:00 PM</span>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:+97165398841">📞 +971 6 539 8841</a>
+      <span class="topbar-divider">|</span>
+      <a href="https://wa.me/971506840517">💬 WhatsApp: +971 50 684 0517</a>
+      <span class="topbar-divider">|</span>
+      <a href="mailto:sales@alfanaruae.com">✉ sales@alfanaruae.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <a href="#home" class="logo">
+      <img src="Al_Fanar_logo_high_res.png" alt="Al Fanar Auto Spare Parts">
+    </a>
+    <nav id="mainNav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <div class="nav-dropdown">
+        <a href="#products">Products</a>
+        <div class="dropdown-menu">
+          <a href="#products">Body Parts</a>
+          <a href="#products">Brake System</a>
+          <a href="#products">Clutches</a>
+          <a href="#products">Cable Parts</a>
+          <a href="#products">Compressor Parts</a>
+          <a href="#products">Electrical Parts</a>
+          <a href="#products">Cooling Parts</a>
+          <a href="#products">Engine Parts</a>
+          <a href="#products">Fuel Injection</a>
+          <a href="#products">Gaskets</a>
+          <a href="#products">Gear Parts</a>
+          <a href="#products">Hydraulic Parts</a>
+          <a href="#products">Suspension Parts</a>
+        </div>
+      </div>
+      <a href="#contact" class="nav-cta">Contact Us</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- Nav Button Bar -->
+<div class="nav-bar">
+  <div class="nav-bar-inner">
+    <a href="#home" class="nb-active">🏠 Home</a>
+    <a href="#about">About Us</a>
+    <div class="nb-dropdown">
+      <a href="#products">Products</a>
+      <div class="nb-dropdown-menu">
+        <a href="#products">Body Parts</a>
+        <a href="#products">Brake System</a>
+        <a href="#products">Clutches</a>
+        <a href="#products">Cable Parts</a>
+        <a href="#products">Compressor Parts</a>
+        <a href="#products">Electrical Parts</a>
+        <a href="#products">Cooling Parts</a>
+        <a href="#products">Engine Parts</a>
+        <a href="#products">Fuel Injection</a>
+        <a href="#products">Gaskets</a>
+        <a href="#products">Gear Parts</a>
+        <a href="#products">Hydraulic Parts</a>
+        <a href="#products">Suspension Parts</a>
+      </div>
+    </div>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
+    <a href="https://wa.me/971506840517" target="_blank">💬 WhatsApp</a>
+    <a href="mailto:sales@alfanaruae.com">✉ Email Us</a>
+  </div>
+</div>
+
+<!-- Hero Slider -->
+<section class="hero" id="home">
+  <div class="slide slide-1 active">
+    <div class="slide-bg"></div>
+    <div class="slide-overlay"></div>
+    <div class="hero-truck-icon">🚛</div>
+    <div class="slide-content">
+      <p class="slide-eyebrow">Trusted Since 2002 · Sharjah, UAE</p>
+      <h1 class="slide-title">Quality Parts for Commercial Vehicles</h1>
+      <p class="slide-sub">Your reliable partner for Hino, Isuzu, Fuso, Nissan UD, Tata & crane spare parts across UAE and GCC.</p>
+      <a href="#products" class="btn-primary">Browse Products</a>
+      <a href="#contact" class="btn-outline">Get a Quote</a>
+    </div>
+  </div>
+  <div class="slide slide-2">
+    <div class="slide-bg"></div>
+    <div class="slide-overlay"></div>
+    <div class="hero-truck-icon">⚙️</div>
+    <div class="slide-content">
+      <p class="slide-eyebrow">Ex-Stock Availability · Fast Delivery</p>
+      <h1 class="slide-title">Engine, Brake & Suspension Parts</h1>
+      <p class="slide-sub">Extensive in-stock inventory of diesel engine parts, brake systems, and suspension components ready to ship.</p>
+      <a href="#products" class="btn-primary">View Categories</a>
+      <a href="#contact" class="btn-outline">Call Us Now</a>
+    </div>
+  </div>
+  <div class="slide slide-3">
+    <div class="slide-bg"></div>
+    <div class="slide-overlay"></div>
+    <div class="hero-truck-icon">🏗️</div>
+    <div class="slide-content">
+      <p class="slide-eyebrow">Tadano · Kato · Crane Parts</p>
+      <h1 class="slide-title">Heavy Equipment & Crane Spare Parts</h1>
+      <p class="slide-sub">Specialists in Tadano, Kato, and heavy crane components for the construction and logistics industry.</p>
+      <a href="#products" class="btn-primary">Explore Products</a>
+      <a href="#contact" class="btn-outline">Contact Us</a>
+    </div>
+  </div>
+  <div class="slide-dots">
+    <div class="dot active" onclick="goToSlide(0)"></div>
+    <div class="dot" onclick="goToSlide(1)"></div>
+    <div class="dot" onclick="goToSlide(2)"></div>
+  </div>
+</section>
+
+<!-- Brands Scrolling Strip -->
+<div class="brands-strip">
+  <div class="brands-track" id="brandsTrack">
+    <span class="brand-item">Hino</span>
+    <span class="brand-item">Isuzu</span>
+    <span class="brand-item">Mitsubishi Fuso</span>
+    <span class="brand-item">Nissan UD</span>
+    <span class="brand-item">Tata</span>
+    <span class="brand-item">Tadano</span>
+    <span class="brand-item">Kato</span>
+    <span class="brand-item">Mercedes-Benz</span>
+    <span class="brand-item">Toyota</span>
+    <span class="brand-item">Volvo</span>
+    <span class="brand-item">MAN</span>
+    <span class="brand-item">Scania</span>
+    <span class="brand-item">Hino</span>
+    <span class="brand-item">Isuzu</span>
+    <span class="brand-item">Mitsubishi Fuso</span>
+    <span class="brand-item">Nissan UD</span>
+    <span class="brand-item">Tata</span>
+    <span class="brand-item">Tadano</span>
+    <span class="brand-item">Kato</span>
+    <span class="brand-item">Mercedes-Benz</span>
+    <span class="brand-item">Toyota</span>
+    <span class="brand-item">Volvo</span>
+    <span class="brand-item">MAN</span>
+    <span class="brand-item">Scania</span>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">What We Offer</span>
+      <h2 class="section-title">Our <span>Services</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon">📦</span>
+        <h3>Ex-Stock Items</h3>
+        <p>Large inventory of parts available immediately from our Sharjah warehouse for fast fulfillment.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">📋</span>
+        <h3>Booking Orders</h3>
+        <p>Can't find what you need in stock? Place a booking order and we'll source it for you.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🔧</span>
+        <h3>Installation & Maintenance</h3>
+        <p>Professional guidance and support for installation and maintenance of parts.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🌍</span>
+        <h3>UAE & GCC Supply</h3>
+        <p>We supply to all local UAE states and GCC countries with reliable and timely delivery.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">💬</span>
+        <h3>WhatsApp Support</h3>
+        <p>Quick quotes and order support via WhatsApp for fast and convenient communication.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section class="products-section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Our Catalogue</span>
+      <h2 class="section-title">Product <span>Categories</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="categories-grid">
+      <div class="category-card" onclick="openCat('bodyparts')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/body-parts-500x625.jpg" alt="Body Parts" loading="lazy"></div>
+        <h3>Body Parts</h3>
+      </div>
+      <div class="category-card" onclick="openCat('brakesystem')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/brake-500x625.jpg" alt="Brake System" loading="lazy"></div>
+        <h3>Brake System</h3>
+      </div>
+      <div class="category-card" onclick="openCat('clutches')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/clutch-500x625.jpg" alt="Clutches" loading="lazy"></div>
+        <h3>Clutches</h3>
+      </div>
+      <div class="category-card" onclick="openCat('cableparts')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/cable-part-500x625.jpg" alt="Cable Parts" loading="lazy"></div>
+        <h3>Cable Parts</h3>
+      </div>
+      <div class="category-card" onclick="openCat('compressorparts')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/compressor-500x625.jpg" alt="Compressor Parts" loading="lazy"></div>
+        <h3>Compressor Parts</h3>
+      </div>
+      <div class="category-card" onclick="openCat('electricalparts')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/electrical-500x625.jpg" alt="Electrical Parts" loading="lazy"></div>
+        <h3>Electrical Parts</h3>
+      </div>
+      <div class="category-card" onclick="openCat('coolingparts')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/cooling-part-500x625.jpg" alt="Cooling Parts" loading="lazy"></div>
+        <h3>Cooling Parts</h3>
+      </div>
+      <div class="category-card" onclick="openCat('engineparts')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/engine-500x625.jpg" alt="Engine Parts" loading="lazy"></div>
+        <h3>Engine Parts</h3>
+      </div>
+      <div class="category-card" onclick="openCat('fuelinjection')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/injector-500x625.jpg" alt="Fuel Injection" loading="lazy"></div>
+        <h3>Fuel Injection</h3>
+      </div>
+      <div class="category-card" onclick="openCat('gaskets')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/gasket-500x625.jpg" alt="Gaskets" loading="lazy"></div>
+        <h3>Gaskets</h3>
+      </div>
+      <div class="category-card" onclick="openCat('gearparts')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/gear-500x625.jpg" alt="Gear Parts" loading="lazy"></div>
+        <h3>Gear Parts</h3>
+      </div>
+      <div class="category-card" onclick="openCat('hydraulicparts')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/hydrulics-500x625.jpg" alt="Hydraulic Parts" loading="lazy"></div>
+        <h3>Hydraulic Parts</h3>
+      </div>
+      <div class="category-card" onclick="openCat('suspensionparts')">
+        <div class="cat-img-wrap"><img class="cat-img" src="https://citylineuae.com/wp-content/uploads/2017/03/suspension-500x625.jpg" alt="Suspension Parts" loading="lazy"></div>
+        <h3>Suspension Parts</h3>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:36px; font-size:14px; color:var(--grey);">
+      Can't find what you're looking for? <a href="mailto:sales@alfanaruae.com" style="color:var(--gold); font-weight:600;">Email us your requirement →</a>
+    </p>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about-strip" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-header">
+          <span class="section-eyebrow">Who We Are</span>
+          <h2 class="section-title">Al Fanar Auto<br><span>Spare Parts</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <p class="about-text">
+          Established in 2002, Al Fanar Auto Spare Parts Trading has grown to become a trusted name in the UAE and GCC auto parts industry. Based in Industrial Area 2, Sharjah, we specialize in quality aftermarket spare parts for commercial vehicles including trucks, buses, and heavy equipment.
+        </p>
+        <p class="about-text" style="margin-top:14px;">
+          Our mission is to provide the right parts at the right time, with uncompromising quality standards and customer service that sets us apart in the competitive Middle East market.
+        </p>
+        <div class="about-stats">
+          <div class="stat-box">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Years in Business</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Brands Covered</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">13</div>
+            <div class="stat-label">Product Categories</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">UAE+</div>
+            <div class="stat-label">UAE & GCC Supply</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-feature">
+          <span class="about-feature-icon">🏆</span>
+          <h4>Mission</h4>
+          <p>Provide products at the right time, right place with zero tolerance for compromise on quality.</p>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-icon">🔭</span>
+          <h4>Vision</h4>
+          <p>To be the most favorable company in auto spare parts and machinery trading in the Middle East.</p>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-icon">🎯</span>
+          <h4>Objective</h4>
+          <p>Become a leading wholesale distributor for aftermarket diesel spare parts in the GCC region.</p>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-icon">✅</span>
+          <h4>Quality Promise</h4>
+          <p>Every part we stock meets strict quality standards to ensure reliability and customer satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Get In Touch</span>
+      <h2 class="section-title">Contact <span>Us</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Visit or Call Us</h3>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <h4>Address</h4>
+            <p>Caterpillar Road, Industrial Area 2,<br>Sharjah, United Arab Emirates</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div class="contact-item-text">
+            <h4>Telephone</h4>
+            <a href="tel:+97165398841">+971 6 539 8841</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📠</div>
+          <div class="contact-item-text">
+            <h4>Fax</h4>
+            <p>+971 6 539 8840</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">💬</div>
+          <div class="contact-item-text">
+            <h4>WhatsApp & Mobile</h4>
+            <a href="https://wa.me/971506840517">+971 50 684 0517</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div class="contact-item-text">
+            <h4>Email</h4>
+            <a href="mailto:sales@alfanaruae.com">sales@alfanaruae.com</a>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-btn" title="Follow us on Facebook (coming soon)">
+            <span>📘</span> Facebook
+          </a>
+          <a href="#" class="social-btn" title="Follow us on Instagram (coming soon)">
+            <span>📷</span> Instagram
+          </a>
+        </div>
+        <p style="font-size:12px; color:#aaa; margin-top:10px;">Social media accounts coming soon!</p>
+      </div>
+
+      <div class="contact-form-box">
+        <h3>Send an Enquiry</h3>
+        <form onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input type="text" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label>Company</label>
+              <input type="text" placeholder="Company name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone / WhatsApp</label>
+              <input type="tel" placeholder="+971 ...">
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Product Category</label>
+            <select>
+              <option value="">Select a category...</option>
+              <option>Body Parts</option>
+              <option>Brake System</option>
+              <option>Clutches</option>
+              <option>Cable Parts</option>
+              <option>Compressor Parts</option>
+              <option>Electrical Parts</option>
+              <option>Cooling Parts</option>
+              <option>Engine Parts</option>
+              <option>Fuel Injection</option>
+              <option>Gaskets</option>
+              <option>Gear Parts</option>
+              <option>Hydraulic Parts</option>
+              <option>Suspension Parts</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message / Part Details *</label>
+            <textarea placeholder="Please describe the part you need, including vehicle make, model, year if possible..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Enquiry →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+<div class="map-section">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14196.81644228728!2d55.4055502058765!3d25.311737041133277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5eabb999b0b3%3A0x6b1ae89559e69e97!2sAl%20Fanar%20Auto%20Spare%20Parts%20Trdg!5e1!3m2!1sen!2sae!4v1772174945787!5m2!1sen!2sae"
+    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="Al_Fanar_logo_high_res.png" alt="Al Fanar Auto Spare Parts">
+      <p>Al Fanar Auto Spare Parts Trading — a trusted supplier of quality commercial vehicle spare parts in the UAE and GCC since 2002.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="#products">Engine Parts</a>
+      <a href="#products">Brake System</a>
+      <a href="#products">Suspension</a>
+      <a href="#products">Electrical Parts</a>
+      <a href="#products">Fuel Injection</a>
+      <a href="#products">View All →</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+97165398841">+971 6 539 8841</a>
+      <a href="https://wa.me/971506840517">WhatsApp Us</a>
+      <a href="mailto:sales@alfanaruae.com">sales@alfanaruae.com</a>
+      <a href="#contact">Ind. Area 2, Sharjah</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Al Fanar Auto Spare Parts Trading LLC. All Rights Reserved.</span>
+    <span><a href="mailto:sales@alfanaruae.com">sales@alfanaruae.com</a></span>
+  </div>
+</footer>
+
+<!-- ═══ CATEGORY PAGE OVERLAYS ═══ -->
+
+<div id="cat-bodyparts" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Body Parts</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Body Parts</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/alloy-step-500x625.jpg" alt="Alloy Steps"><div class="product-card-body"><h4>Alloy Steps</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Alloy Steps" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/bumper-500x625.jpg" alt="Bumpers"><div class="product-card-body"><h4>Bumpers</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Bumpers" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Corner-Lamps-500x625.jpg" alt="Corner Lamps"><div class="product-card-body"><h4>Corner Lamps</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Corner Lamps" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/door-handle-500x625.jpg" alt="Door Handles"><div class="product-card-body"><h4>Door Handles</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Door Handles" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Fenders-500x625.jpg" alt="Fenders"><div class="product-card-body"><h4>Fenders</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Fenders" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/fog-lamp-500x625.jpg" alt="Fog Lamps"><div class="product-card-body"><h4>Fog Lamps</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Fog Lamps" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Grille-500x625.jpg" alt="Grille"><div class="product-card-body"><h4>Grille</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Grille" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Head-Lamps-500x625.jpg" alt="Head Lamps"><div class="product-card-body"><h4>Head Lamps</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Head Lamps" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Mirrors-500x625.jpg" alt="Mirrors"><div class="product-card-body"><h4>Mirrors</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Mirrors" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Panel-Corner-500x625.jpg" alt="Panel Corner"><div class="product-card-body"><h4>Panel Corner</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Panel Corner" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/side-lamp-500x625.jpg" alt="Side Lamps"><div class="product-card-body"><h4>Side Lamps</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Side Lamps" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Side-Steps-500x625.jpg" alt="Side Steps"><div class="product-card-body"><h4>Side Steps</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Side Steps" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Tail-Lamps-500x625.jpg" alt="Tail Lamps"><div class="product-card-body"><h4>Tail Lamps</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Tail Lamps" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Vane-Corners-500x625.jpg" alt="Vane Corners"><div class="product-card-body"><h4>Vane Corners</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Vane Corners" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Body Parts Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-brakesystem" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Brake System</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Brake System</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Air-Master2-500x625.jpg" alt="Air Master"><div class="product-card-body"><h4>Air Master</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Air Master" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/BMC-Assy2-500x625.jpg" alt="BMC Assy"><div class="product-card-body"><h4>BMC Assy</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: BMC Assy" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/brake-booster-500x625.jpg" alt="Brake Boosters"><div class="product-card-body"><h4>Brake Boosters</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Brake Boosters" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/brake-chamber-500x625.jpg" alt="Brake Chamber"><div class="product-card-body"><h4>Brake Chamber</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Brake Chamber" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/lining-500x625.jpg" alt="Brake Drum & Lining"><div class="product-card-body"><h4>Brake Drum & Lining</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Brake Drum & Lining" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Hydro-Master-500x625.jpg" alt="Hydro Master"><div class="product-card-body"><h4>Hydro Master</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Hydro Master" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Slack-Adjuster-500x625.jpg" alt="Slack Adjuster"><div class="product-card-body"><h4>Slack Adjuster</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Slack Adjuster" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Brake System Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-clutches" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Clutches</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Clutches</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/CB2-500x625.jpg" alt="Clutch Booster"><div class="product-card-body"><h4>Clutch Booster</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Clutch Booster" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/CSA3-500x625.jpg" alt="Clutch Servo Assy"><div class="product-card-body"><h4>Clutch Servo Assy</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Clutch Servo Assy" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/CP3-500x625.jpg" alt="Clutches"><div class="product-card-body"><h4>Clutch Disc</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Clutch Disc" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/CCA3-500x625.jpg" alt="CMC & COC Assy"><div class="product-card-body"><h4>CMC & COC Assy</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: CMC COC Assy" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/CF3-500x625.jpg" alt="Forks"><div class="product-card-body"><h4>Forks</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Forks" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/PP3-500x625.jpg" alt="Pressure Plate"><div class="product-card-body"><h4>Pressure Plate</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Pressure Plate" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/RB3-500x625.jpg" alt="Release Bearing"><div class="product-card-body"><h4>Release Bearing</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Release Bearing" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/rc3-500x625.jpg" alt="Repair Kits"><div class="product-card-body"><h4>Repair Kits</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Repair Kits" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Clutches Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-cableparts" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Cable Parts</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Cable Parts</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Accelerator-Cable-500x625.jpg" alt="Accelerator Cable"><div class="product-card-body"><h4>Accelerator Cable</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Accelerator Cable" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/cable-end-500x625.jpg" alt="Cable Ends"><div class="product-card-body"><h4>Cable Ends</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Cable Ends" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Gear-Cable-500x625.jpg" alt="Gear Cable"><div class="product-card-body"><h4>Gear Cable</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Gear Cable" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/GEAR-CABLE-HINO-Cityline.jpg" alt="Gear Cable Hino"><div class="product-card-body"><h4>Gear Cable – Hino</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Gear Cable Hino" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/GEAR-CABLE-NISSAN-Cityline.jpg" alt="Gear Cable Nissan"><div class="product-card-body"><h4>Gear Cable – Nissan</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Gear Cable Nissan" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/handbrake-cable-500x625.jpg" alt="Hand Brake Cable"><div class="product-card-body"><h4>Hand Brake Cable</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Hand Brake Cable" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/HAND-BRAKE-CABLE-HINO-Cityline-1.jpg" alt="Hand Brake Cable Hino"><div class="product-card-body"><h4>Hand Brake Cable – Hino</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Hand Brake Cable Hino" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/pto-cable-500x625.jpg" alt="PTO Cable"><div class="product-card-body"><h4>P.T.O Cable</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: PTO Cable" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Speedometer-Cable-500x625.jpg" alt="Speedometer Cable"><div class="product-card-body"><h4>Speedometer Cable</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Speedometer Cable" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Looking for a specific cable?</strong> Tell us your vehicle details and we'll source it for you.</p><a href="mailto:sales@alfanaruae.com?subject=Cable Parts Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-compressorparts" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Compressor Parts</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Compressor Parts</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/AC3-500x625.jpg" alt="Air Compressor Assy"><div class="product-card-body"><h4>Air Compressor Assy</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Air Compressor Assy" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/ACV3-500x625.jpg" alt="Valves and Repair Kits"><div class="product-card-body"><h4>Valves & Repair Kits</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Compressor Valves Repair Kits" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Need a specific compressor part?</strong> Contact us with your vehicle details.</p><a href="mailto:sales@alfanaruae.com?subject=Compressor Parts Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-electricalparts" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Electrical Parts</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Electrical Parts</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Alternator3-500x625.jpg" alt="Alternator"><div class="product-card-body"><h4>Alternator</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Alternator" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Bindix3-500x625.jpg" alt="Bindix"><div class="product-card-body"><h4>Bindix</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Bindix" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/magnetic-switch3-500x625.jpg" alt="Magnetic Switches"><div class="product-card-body"><h4>Magnetic Switches</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Magnetic Switches" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Relays1-500x625.jpg" alt="Relays"><div class="product-card-body"><h4>Relays</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Relays" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Solenoid-Switch3-500x625.jpg" alt="Solenoid Switch"><div class="product-card-body"><h4>Solenoid Switch</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Solenoid Switch" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/starter3-500x625.jpg" alt="Starter"><div class="product-card-body"><h4>Starter</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Starter" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Temperature-Guages3-500x625.jpg" alt="Temperature Gauges"><div class="product-card-body"><h4>Temperature Gauges</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Temperature Gauges" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Electrical Parts Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-coolingparts" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Cooling Parts</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Cooling Parts</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/OC3-500x625.jpg" alt="Oil Coolers & Cover"><div class="product-card-body"><h4>Oil Coolers & Cover</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Oil Coolers Cover" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/OP3-500x625.jpg" alt="Oil Pump"><div class="product-card-body"><h4>Oil Pump</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Oil Pump" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/RH3-500x625.jpg" alt="Radiator & Hoses"><div class="product-card-body"><h4>Radiator & Hoses</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Radiator Hoses" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/rc3-500x625.jpg" alt="Repair Kits"><div class="product-card-body"><h4>Repair Kits</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Cooling Repair Kits" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/WTS3-500x625.jpg" alt="Temperature Sending Units"><div class="product-card-body"><h4>Temperature Sending Units</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Temperature Sending Units" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/WP3-500x625.jpg" alt="Water Pump"><div class="product-card-body"><h4>Water Pump</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Water Pump" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Cooling Parts Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-engineparts" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Engine Parts</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Engine Parts</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2015/09/CamBushes1-500x625.jpg" alt="Cam Shaft"><div class="product-card-body"><h4>Cam Shaft & Bearings</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Cam Shaft" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2015/09/CrankShaft4-500x625.jpg" alt="Crank Shaft"><div class="product-card-body"><h4>Crank Shaft</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Crank Shaft" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2015/09/enginevalves4-500x625.jpg" alt="Engine Valves"><div class="product-card-body"><h4>Engine Valves</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Engine Valves" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2015/10/Liner-kits-4-500x625.jpg" alt="Liner Kits"><div class="product-card-body"><h4>Liner Kits</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Liner Kits" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2015/10/piston1-500x625.jpg" alt="Piston"><div class="product-card-body"><h4>Piston</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Piston" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2015/10/ring4-500x625.jpg" alt="Rings"><div class="product-card-body"><h4>Piston Rings</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Piston Rings" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/seat4-500x625.jpg" alt="Valve Seats"><div class="product-card-body"><h4>Valve Seats</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Valve Seats" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/FLY-WHEEL-HINO-MITSUBISHI-FUSO-NISSAN-UD-ISUZU-Cityline-500x190.jpg" alt="Fly Wheel"><div class="product-card-body"><h4>Fly Wheel</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Fly Wheel" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/PISTON-HINO-ISUZU-UD-FUSO-Cityline.jpg" alt="Piston Assembly"><div class="product-card-body"><h4>Piston Assembly</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Piston Assembly" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Engine Parts Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-fuelinjection" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Fuel Injection</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Fuel Injection</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/dv3-500x625.jpg" alt="Delivery Valve"><div class="product-card-body"><h4>Delivery Valve</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Delivery Valve" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/nozel1-500x625.jpg" alt="Nozzle"><div class="product-card-body"><h4>Nozzle</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Nozzle" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/ns3-500x625.jpg" alt="Nozzle Sleeve & Holder"><div class="product-card-body"><h4>Nozzle Sleeve & Holder</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Nozzle Sleeve Holder" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/plunger3-500x625.jpg" alt="Plunger"><div class="product-card-body"><h4>Plunger</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Plunger" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/rc3-500x625.jpg" alt="Repair Kits"><div class="product-card-body"><h4>Repair Kits</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Fuel Injection Repair Kits" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Fuel Injection Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-gaskets" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Gaskets</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Gaskets</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/FROS3-1-500x625.jpg" alt="Crankshaft Oil Seals"><div class="product-card-body"><h4>Crankshaft Oil Seals Front/Rear</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Crankshaft Oil Seals" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/CH3-500x625.jpg" alt="Cylinder Head Gasket"><div class="product-card-body"><h4>Cylinder Head Gasket</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Cylinder Head Gasket" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/LOR3-500x625.jpg" alt="Liner O-Rings"><div class="product-card-body"><h4>Liner "O" Rings</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Liner O Rings" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/MF2-500x625.jpg" alt="Manifold Gasket"><div class="product-card-body"><h4>Manifold Intake & Exhaust</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Manifold Gasket" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/OP3-3-500x625.jpg" alt="Oil Pan Gasket"><div class="product-card-body"><h4>Oil Pan Gasket</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Oil Pan Gasket" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/TC1-500x625.jpg" alt="Tappet Cover"><div class="product-card-body"><h4>Tappet Cover</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Tappet Cover" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/CTC3-500x625.jpg" alt="Timing Set"><div class="product-card-body"><h4>Timing Set</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Timing Set" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/FROS3-500x625.jpg" alt="Valve Seals"><div class="product-card-body"><h4>Valve Seals</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Valve Seals" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Need a gasket set for a specific engine?</strong> Email us your engine code and we'll source it.</p><a href="mailto:sales@alfanaruae.com?subject=Gaskets Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-gearparts" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Gear Parts</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Gear Parts</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/Crown-Wheel-Pinion-Gear-Parts-Cityline.jpg" alt="Crown Wheel & Pinion"><div class="product-card-body"><h4>Crown Wheel & Pinion</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Crown Wheel Pinion" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/DIFFERENTIAL-ASSY-HINO-UD-FUSO-Cityline-500x376.jpg" alt="Differential"><div class="product-card-body"><h4>Differential Assy</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Differential" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/DIFFERENTIAL-KIT-HINO-ISUZU-MITSUBISHI-FUSO-NISSAN-UD-Cityline.jpg" alt="Differential Rep Kit"><div class="product-card-body"><h4>Differential Rep Kit</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Differential Rep Kit" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/GEAR-BOX-PARTS-Cityline-500x300.jpg" alt="Gear Box"><div class="product-card-body"><h4>Gear Box</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Gear Box" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/08/SYNCHRONIZER-Cityline.jpg" alt="Synchronizer"><div class="product-card-body"><h4>Synchronizer</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Synchronizer" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Gear Parts Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-hydraulicparts" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Hydraulic Parts</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Hydraulic Parts</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/sa2-500x625.jpg" alt="Hydraulic Pump Assy"><div class="product-card-body"><h4>Hydraulic Pump Assy</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Hydraulic Pump Assy" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Power-Steering-Gear-Box2-500x625.jpg" alt="Steering Gear Box"><div class="product-card-body"><h4>Steering Gear Box</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Steering Gear Box" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/07/6BG1-PS-PUMP-ISUZU-Cityline.jpg" alt="Power Steering Pump"><div class="product-card-body"><h4>Power Steering Pump</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Power Steering Pump" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Hydraulic Parts Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<div id="cat-suspensionparts" class="cat-page">
+  <div class="cat-page-header">
+    <button class="cat-back-btn" onclick="closeCat()">← Back</button>
+    <div class="cat-page-title">Suspension Parts</div>
+    <div class="cat-page-breadcrumb">Home › Products › <span>Suspension Parts</span></div>
+  </div>
+  <div class="cat-page-body">
+    <div class="products-grid">
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/drag-link-500x625.jpg" alt="Drag Link"><div class="product-card-body"><h4>Drag Link</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Drag Link" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/king-pin-kit-500x625.jpg" alt="King Pin Kit"><div class="product-card-body"><h4>King Pin Kit</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: King Pin Kit" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/leaf-spring-500x625.jpg" alt="Leaf Spring"><div class="product-card-body"><h4>Leaf Spring</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Leaf Spring" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/sa1-500x625.jpg" alt="Shock Absorber"><div class="product-card-body"><h4>Shock Absorber</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Shock Absorber" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/Spring-Chamber-500x625.jpg" alt="Spring Chamber"><div class="product-card-body"><h4>Spring Chamber</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Spring Chamber" class="product-enquire-btn">Enquire Now</a></div></div>
+      <div class="product-card"><img src="https://citylineuae.com/wp-content/uploads/2017/03/tie-rod-500x625.jpg" alt="Tie Rod"><div class="product-card-body"><h4>Tie Rod</h4><a href="mailto:sales@alfanaruae.com?subject=Enquiry: Tie Rod" class="product-enquire-btn">Enquire Now</a></div></div>
+    </div>
+    <div class="cat-enquire-banner"><p><strong>Can't find what you need?</strong> Contact us with your vehicle make, model and year.</p><a href="mailto:sales@alfanaruae.com?subject=Suspension Parts Enquiry" class="btn-primary">Email Enquiry</a></div>
+  </div>
+</div>
+
+<script>
+// Slider
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+function goToSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  dots[currentSlide].classList.remove('active');
+  currentSlide = n;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+}
+
+setInterval(() => {
+  goToSlide((currentSlide + 1) % slides.length);
+}, 5000);
+
+// Mobile nav
+function toggleNav() {
+  document.getElementById('mainNav').classList.toggle('open');
+}
+
+// Form submit
+function submitForm(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.querySelector('input[type="text"]').value;
+  window.location.href = `mailto:sales@alfanaruae.com?subject=Website Enquiry from ${name}&body=Please describe your requirements here.`;
+}
+
+// Category page open/close
+function openCat(id) {
+  const el = document.getElementById('cat-' + id);
+  if (el) {
+    el.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    el.scrollTop = 0;
+  }
+}
+function closeCat() {
+  document.querySelectorAll('.cat-page.open').forEach(el => {
+    el.classList.remove('open');
+  });
+  document.body.style.overflow = '';
+}
+// Close with Escape key
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCat(); });
+
+// Active nav on scroll
+window.addEventListener('scroll', () => {
+  const sections = ['home','about','products','contact'];
+  let current = 'home';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 120) current = id;
+  });
+  document.querySelectorAll('nav a').forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
